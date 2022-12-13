@@ -14,6 +14,11 @@ import { Link } from "react-router-dom";
 
 export default function SidebarChat({ addNewChat, name, id }) {
     const [msg, setMsg] = useState("");
+    const[seed , setSeed] = useState("");
+
+    useEffect(()=>{
+        setSeed(Math.floor(Math.random() * 5000))
+    },[])
     useEffect(() => {
         if (id) {
             const q = query(
@@ -46,7 +51,7 @@ export default function SidebarChat({ addNewChat, name, id }) {
         <Link to={`group/${id}`}>
             <div className="sidebarChat">
                 <img
-                    src="https://cdn-icons-png.flaticon.com/128/4333/4333609.png"
+                    src={`https://avatars.dicebear.com/api/adventurer/${seed}.svg`}
                     alt=""
                 />
                 <div className="sidebarChatInfo">

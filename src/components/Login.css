@@ -11,10 +11,10 @@ body {
 .form {
   width: 400px;
   border-radius: 5px;
-  background-color: #9633ff;
+  background-color: orange;
   /* height:fit-content;  */
   padding: 5px 10px;
-  color: white;
+  color: black;
 }
 
 label {
