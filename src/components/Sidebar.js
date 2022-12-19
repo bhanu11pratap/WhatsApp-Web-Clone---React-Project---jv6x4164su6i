@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import "./Sidebar.css";
-import { collection, onSnapshot } from "firebase/firestore";
+import { collection , onSnapshot } from "firebase/firestore";
 import { db } from "../firebase";
 import SidebarChat from "./SidebarChat";
 
